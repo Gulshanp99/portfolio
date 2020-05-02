@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Mighty &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 50%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li.timeline-inverted + li:not(.timeline-inverted),
+.timeline > li:not(.timeline-inverted) + li.timeline-inverted {
+margin-top: -60px;
+}
+
+.timeline > li:not(.timeline-inverted) {
+padding-right:90px;
+}
+
+.timeline > li.timeline-inverted {
+padding-left:90px;
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+    	.me{
+    		border-radius: 50%;
+    	}
+    	.h:hover{
+    		background-color: #cfffe6;
+    		transform: scale(1.1);
+    		transform: rotateY(360deg);
+    	}
+    	.a:hover{
+    		background-color: red;
+    	}
+    		.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height:auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="index.html" class="font-weight-bold">Welcome!</a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right" >
+              
+
+              <span class="d-inline-block d-lg-block"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+              
+              <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="about.html" class="nav-link">About</a></li>
+                  <li><a href="work.html" class="nav-link">Work</a></li>
+                  <li><a href="journal.html" class="nav-link">Journal</a></li>
+                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+      <div class="site-section-cover overlay" style="background-image: url('images/b1.jpg')">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center">
+              <h1 class="mb-4 text-white">Mighty Web Design Agency</h1>
+              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <h2 class="h4 mb-4">About Me</h2>
+            <p>I'm a python developer.</p>
+            <p>Love to design and work as an Backend Engineer. Specialist in IoT Projects and an ML Practitioner.</p>
+            <p><a href="#" class="btn btn-primary text-white px-5">Our works</a></p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/me.jpg" alt="Image" class="me" class="img-fluid"  height="60%" width="60%">
+          </div>
+          <div class="col-md-4">
+            
+            <h2 class="h4 mb-4">My expertise and skills</h2>
+<div>
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+              <p style="float: left;"><img src="images/python.jpg" height="80%" width="30">
+                <p>Python</p>
+                <p class="ml-auto">95%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/Iot.png" height="90%" width="50">
+                <p>IoT</p>
+                <p class="ml-auto">80</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/ml.png" height="90%" width="50">
+                <p>Machine Learning</p>
+                <p class="ml-auto">70%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/flask.png" height="90%" width="30">
+                <p>Flask</p>
+                <p class="ml-auto">85%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/php.png" height="90%" width="30">
+                <p>Php</p>
+                <p class="ml-auto">85%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/fire.png" height="90%" width="20">
+                <p>Firebase</p>
+                <p class="ml-auto">60%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/gcp.png" height="100%" width="30">
+                <p>Google Cloud Platform</p>
+                <p class="ml-auto">60%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/sql.jpg" height="90%" width="30">
+                <p>Sql</p>
+                <p class="ml-auto">50%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <p style="float: left;"><img src="images/html.png" height="90%" width="30">
+                <p>Html and Css</p>
+                <p class="ml-auto">60%</p>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="service-29128 text-center h">
+              <span class="d-block wrap-icon">
+                <span style="float: center;"><img class="me" src="images/web1.jpg" height="100%" width="60%"></span>
+              </span>
+              <h3>Web Design</h3>
+              <p>Website Development for small Businesses,Students Projects and E-Commerce Website.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center h">
+              <span class="d-block wrap-icon">
+                <span style="float: center;"><img class="me" src="images/iot1.png" height="100%" width="30%"></span>
+              </span>
+              <h3>Internet of Things</h3>
+              <p>Projects Development related to IoT Domains and DIY kits for Learning.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center h">
+              <span class="d-block wrap-icon">
+                <span style="float: center;"><img class="me" src="images/project.png" height="100%" width="30%"></span>
+              </span>
+              <h3>Project Development</h3>
+              <p>Mini and Final Year Project Development of all Domains.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center h">
+              <span class="d-block wrap-icon">
+                <span style="float: center;"><img class="me" src="images/train.png" height="150%" width="50%"></span>
+              </span>
+              <h3>Workshops and Trainings</h3>
+              <p>College Workshops and Personal Training on Emerging Technologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">My Works</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 ">
+            <div class="item web hvrbox">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 250px"  src="images/line1.png">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Remote/Gesture/Voice Control Car Using Arduino.</div>
+	</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web hvrbox">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 250px"  src="images/dust.jpg">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text"> Moving Smart Dustbin Using Arduino.</div>
+	</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web hvrbox">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 290px"  src="images/Li.jpg">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Line Follower with Speed Controller Using Arduino.</div>
+	</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web hvrbox">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 250px"  src="images/line.png">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">E-Commerce Website for Buying/Selling of Products.</div>
+	</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web hvrbox">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 250px"  src="images/rail.png">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Railway Data Analysis System.</div>
+	</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web hvrbox ">
+                <img class="img-fluid hvrbox-layer_bottom" style="height: 250px"  src="images/cancer.png">
+                <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Cancer Prediction Using Machine Learning.</div>
+	</div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div> <!-- END .site-section -->
+    <div class="site-section bg-light">
+    <div class="container ">
+    <div class="page-header">
+        <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">Education and Achievements.</h2>
+          </div>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">SSC Education.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004 to 2014</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Mount Mary English High School.<br> Virar,Palghar.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel " style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">HSC Education.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2014 to 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Utkarsha Vidyalaya and Junior college.</p>
+              <p>Virar,Palghar.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel " style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Graduation.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2016 to Present.</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>St. John College of Engineering and Management.</p>
+              <p>Palghar.</p>
+              <p>Branch :- Infornation Technology.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+        <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Winner of Line Follower Competition.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Feb 2018</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Natinal level Intercollegiate Event.</p>
+              <p>Shri L.R Tiwari College of Engineering.</p>
+              <p>Bhayander,Thane.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Winner of Web Designing Competition.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Feb 2019</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Natinal level Intercollegiate Event - MEGALEIO.</p>
+              <p>St. John College of Engineering and Management.</p>
+              <p>Palghar.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Web Designing Internship.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>May 2018 to July 2018</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Designed Backend for College Website.</p>
+              <p>St. John College of Engineering and Management.</p>
+              <p>Palghar.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Deep Learning Workshop cum Internship.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Jun 2019 to july 2019</small></p>
+            </div>
+            <div class="timeline-body">
+            <p>Designed Rotten fruit detector using object recognition with Convolution Neural Networks under the guidance of Dr. Manesh Kokare (PhD - IIT Kharagpur, Post Doc Fellow - BOYSCAST University of California, Santa Barbara).</p>
+              <p>Terna College of Engineering.</p>
+              <p>Nerul,Navi Mumbai.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel " style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Technical Trainer.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Nov 2019</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Conducted one day STTP workshop on IoT For EXTC Engineering Faculty.</p>
+              <p>Atharva College of Engineering.</p>
+              <p>Malad,Mumbai.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel" style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Technical Trainer.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Feb 2020</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Conducted three days hands on Machine learning with python workshop for B.E EXTC students.</p>
+              <p>Sinhagad Institute of Technology.</p>
+              <p>Lonavala.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel " style="background-color: white">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Technical Trainer.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>March 2020.</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Conducted three days hands on Machine learning with python workshop for B.E EXTC students.</p>
+              <p>Sinhagad Academy of Engineering.</p>
+              <p>Pune.</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+</div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-3">About Me</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="footer-heading mb-4">Connect</h2>
+                <div class="social_29128 white mb-5">
+                  <a href="#"><span class="icon-facebook"></span></a>  
+                  <a href="#"><span class="icon-instagram"></span></a>  
+                  <a href="#"><span class="icon-twitter"></span></a>  
+                 </div>
+                <h2 class="footer-heading mb-4">Newsletter</h2>
+                <form action="#" class="d-flex" class="subscribe">
+                  <input type="text" class="form-control mr-3" placeholder="Email">
+                  <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
+
